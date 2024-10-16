@@ -1,7 +1,7 @@
 package logging
 
 import (
-	"github.com/Psiphon-Labs/quic-go/internal/protocol"
+	"github.com/toidicakhia/psiphon-quic-go/internal/protocol"
 )
 
 // PacketTypeFromHeader determines the packet type from a *wire.Header.

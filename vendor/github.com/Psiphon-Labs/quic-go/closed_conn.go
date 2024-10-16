@@ -4,8 +4,8 @@ import (
 	"math/bits"
 	"net"
 
-	"github.com/Psiphon-Labs/quic-go/internal/protocol"
-	"github.com/Psiphon-Labs/quic-go/internal/utils"
+	"github.com/toidicakhia/psiphon-quic-go/internal/protocol"
+	"github.com/toidicakhia/psiphon-quic-go/internal/utils"
 )
 
 // A closedLocalConn is a connection that we closed locally.

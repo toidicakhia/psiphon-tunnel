@@ -54,7 +54,7 @@ import (
 	"net"
 	"net/http"
 
-	tls "github.com/Psiphon-Labs/psiphon-tls"
+	tls "github.com/toidicakhia/psiphon-tls"
 )
 
 // HTTPSServer is a wrapper around http.Server which adds the

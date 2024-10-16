@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Psiphon-Labs/quic-go/internal/wire"
-	"github.com/Psiphon-Labs/quic-go/quicvarint"
+	"github.com/toidicakhia/psiphon-quic-go/internal/wire"
+	"github.com/toidicakhia/psiphon-quic-go/quicvarint"
 )
 
 const sessionTicketRevision = 4

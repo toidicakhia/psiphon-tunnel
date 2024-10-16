@@ -39,7 +39,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	tls "github.com/Psiphon-Labs/psiphon-tls"
+	tls "github.com/toidicakhia/psiphon-tls"
 	lrucache "github.com/cognusion/go-cache-lru"
 	"github.com/juju/ratelimit"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"

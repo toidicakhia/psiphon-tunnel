@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Psiphon-Labs/quic-go/internal/handshake"
-	"github.com/Psiphon-Labs/quic-go/internal/protocol"
-	"github.com/Psiphon-Labs/quic-go/internal/qerr"
-	"github.com/Psiphon-Labs/quic-go/internal/wire"
+	"github.com/toidicakhia/psiphon-quic-go/internal/handshake"
+	"github.com/toidicakhia/psiphon-quic-go/internal/protocol"
+	"github.com/toidicakhia/psiphon-quic-go/internal/qerr"
+	"github.com/toidicakhia/psiphon-quic-go/internal/wire"
 )
 
 type headerDecryptor interface {

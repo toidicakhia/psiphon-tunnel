@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/Psiphon-Labs/quic-go"
+	"github.com/toidicakhia/psiphon-quic-go"
 )
 
 // Error is returned from the round tripper (for HTTP clients)

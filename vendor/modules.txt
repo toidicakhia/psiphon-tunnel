@@ -23,27 +23,27 @@ github.com/Psiphon-Labs/consistent
 # github.com/Psiphon-Labs/goptlib v0.0.0-20200406165125-c0e32a7a3464
 ## explicit
 github.com/Psiphon-Labs/goptlib
-# github.com/Psiphon-Labs/psiphon-tls v0.0.0-20240424193802-52b2602ec60c
+# github.com/toidicakhia/psiphon-tls v0.0.0-20240424193802-52b2602ec60c
 ## explicit; go 1.21
-github.com/Psiphon-Labs/psiphon-tls
-# github.com/Psiphon-Labs/quic-go v0.0.0-20240424181006-45545f5e1536
+github.com/toidicakhia/psiphon-tls
+# github.com/toidicakhia/psiphon-quic-go v0.0.0-20240424181006-45545f5e1536
 ## explicit; go 1.21
-github.com/Psiphon-Labs/quic-go
-github.com/Psiphon-Labs/quic-go/http3
-github.com/Psiphon-Labs/quic-go/internal/ackhandler
-github.com/Psiphon-Labs/quic-go/internal/congestion
-github.com/Psiphon-Labs/quic-go/internal/flowcontrol
-github.com/Psiphon-Labs/quic-go/internal/handshake
-github.com/Psiphon-Labs/quic-go/internal/logutils
-github.com/Psiphon-Labs/quic-go/internal/protocol
-github.com/Psiphon-Labs/quic-go/internal/qerr
-github.com/Psiphon-Labs/quic-go/internal/qtls
-github.com/Psiphon-Labs/quic-go/internal/utils
-github.com/Psiphon-Labs/quic-go/internal/utils/linkedlist
-github.com/Psiphon-Labs/quic-go/internal/utils/ringbuffer
-github.com/Psiphon-Labs/quic-go/internal/wire
-github.com/Psiphon-Labs/quic-go/logging
-github.com/Psiphon-Labs/quic-go/quicvarint
+github.com/toidicakhia/psiphon-quic-go
+github.com/toidicakhia/psiphon-quic-go/http3
+github.com/toidicakhia/psiphon-quic-go/internal/ackhandler
+github.com/toidicakhia/psiphon-quic-go/internal/congestion
+github.com/toidicakhia/psiphon-quic-go/internal/flowcontrol
+github.com/toidicakhia/psiphon-quic-go/internal/handshake
+github.com/toidicakhia/psiphon-quic-go/internal/logutils
+github.com/toidicakhia/psiphon-quic-go/internal/protocol
+github.com/toidicakhia/psiphon-quic-go/internal/qerr
+github.com/toidicakhia/psiphon-quic-go/internal/qtls
+github.com/toidicakhia/psiphon-quic-go/internal/utils
+github.com/toidicakhia/psiphon-quic-go/internal/utils/linkedlist
+github.com/toidicakhia/psiphon-quic-go/internal/utils/ringbuffer
+github.com/toidicakhia/psiphon-quic-go/internal/wire
+github.com/toidicakhia/psiphon-quic-go/logging
+github.com/toidicakhia/psiphon-quic-go/quicvarint
 # github.com/andybalholm/brotli v1.0.5
 ## explicit; go 1.12
 github.com/andybalholm/brotli

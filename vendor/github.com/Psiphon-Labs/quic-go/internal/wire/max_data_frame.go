@@ -3,8 +3,8 @@ package wire
 import (
 	"bytes"
 
-	"github.com/Psiphon-Labs/quic-go/internal/protocol"
-	"github.com/Psiphon-Labs/quic-go/quicvarint"
+	"github.com/toidicakhia/psiphon-quic-go/internal/protocol"
+	"github.com/toidicakhia/psiphon-quic-go/quicvarint"
 )
 
 // A MaxDataFrame carries flow control information for the connection

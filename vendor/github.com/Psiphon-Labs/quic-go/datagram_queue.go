@@ -4,9 +4,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/Psiphon-Labs/quic-go/internal/utils"
-	"github.com/Psiphon-Labs/quic-go/internal/utils/ringbuffer"
-	"github.com/Psiphon-Labs/quic-go/internal/wire"
+	"github.com/toidicakhia/psiphon-quic-go/internal/utils"
+	"github.com/toidicakhia/psiphon-quic-go/internal/utils/ringbuffer"
+	"github.com/toidicakhia/psiphon-quic-go/internal/wire"
 )
 
 const (

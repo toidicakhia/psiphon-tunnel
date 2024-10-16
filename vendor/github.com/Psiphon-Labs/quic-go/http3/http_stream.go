@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/Psiphon-Labs/quic-go"
+	"github.com/toidicakhia/psiphon-quic-go"
 )
 
 // A Stream is a HTTP/3 stream.

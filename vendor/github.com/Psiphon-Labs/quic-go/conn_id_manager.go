@@ -3,11 +3,11 @@ package quic
 import (
 	"fmt"
 
-	"github.com/Psiphon-Labs/quic-go/internal/protocol"
-	"github.com/Psiphon-Labs/quic-go/internal/qerr"
-	"github.com/Psiphon-Labs/quic-go/internal/utils"
-	list "github.com/Psiphon-Labs/quic-go/internal/utils/linkedlist"
-	"github.com/Psiphon-Labs/quic-go/internal/wire"
+	"github.com/toidicakhia/psiphon-quic-go/internal/protocol"
+	"github.com/toidicakhia/psiphon-quic-go/internal/qerr"
+	"github.com/toidicakhia/psiphon-quic-go/internal/utils"
+	list "github.com/toidicakhia/psiphon-quic-go/internal/utils/linkedlist"
+	"github.com/toidicakhia/psiphon-quic-go/internal/wire"
 )
 
 type newConnID struct {

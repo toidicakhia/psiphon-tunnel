@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 
-	tls "github.com/Psiphon-Labs/psiphon-tls"
+	tls "github.com/toidicakhia/psiphon-tls"
 
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"

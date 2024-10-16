@@ -3,8 +3,8 @@ package ackhandler
 import (
 	"time"
 
-	"github.com/Psiphon-Labs/quic-go/internal/protocol"
-	"github.com/Psiphon-Labs/quic-go/internal/wire"
+	"github.com/toidicakhia/psiphon-quic-go/internal/protocol"
+	"github.com/toidicakhia/psiphon-quic-go/internal/wire"
 )
 
 // SentPacketHandler handles ACKs received for outgoing packets

@@ -5,7 +5,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/Psiphon-Labs/quic-go/internal/utils"
+	"github.com/toidicakhia/psiphon-quic-go/internal/utils"
 )
 
 var (

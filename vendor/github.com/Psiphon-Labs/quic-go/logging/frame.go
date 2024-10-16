@@ -1,6 +1,6 @@
 package logging
 
-import "github.com/Psiphon-Labs/quic-go/internal/wire"
+import "github.com/toidicakhia/psiphon-quic-go/internal/wire"
 
 // A Frame is a QUIC frame
 type Frame interface{}

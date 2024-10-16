@@ -8,8 +8,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Psiphon-Labs/quic-go/internal/protocol"
-	"github.com/Psiphon-Labs/quic-go/internal/utils"
+	"github.com/toidicakhia/psiphon-quic-go/internal/protocol"
+	"github.com/toidicakhia/psiphon-quic-go/internal/utils"
 )
 
 // OOBCapablePacketConn is a connection that allows the reading of ECN bits from the IP header.
@@ -37,7 +37,7 @@ func wrapConn(pc net.PacketConn) (rawConn, error) {
 				}
 				// [Psiphon]
 				// Do not emit alert to stderr (was log.Printf).
-				logger.Errorf("%s. See https://github.com/Psiphon-Labs/quic-go/wiki/UDP-Buffer-Sizes for details.", err)
+				logger.Errorf("%s. See https://github.com/toidicakhia/psiphon-quic-go/wiki/UDP-Buffer-Sizes for details.", err)
 			})
 		}
 	}
@@ -49,7 +49,7 @@ func wrapConn(pc net.PacketConn) (rawConn, error) {
 				}
 				// [Psiphon]
 				// Do not emit alert to stderr (was log.Printf).
-				logger.Errorf("%s. See https://github.com/Psiphon-Labs/quic-go/wiki/UDP-Buffer-Sizes for details.", err)
+				logger.Errorf("%s. See https://github.com/toidicakhia/psiphon-quic-go/wiki/UDP-Buffer-Sizes for details.", err)
 			})
 		}
 	}

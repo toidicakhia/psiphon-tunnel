@@ -3,7 +3,7 @@ package quic
 import (
 	"fmt"
 
-	"github.com/Psiphon-Labs/quic-go/internal/qerr"
+	"github.com/toidicakhia/psiphon-quic-go/internal/qerr"
 )
 
 type (

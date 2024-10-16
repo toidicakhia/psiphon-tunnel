@@ -31,7 +31,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	ietf_quic "github.com/Psiphon-Labs/quic-go"
+	ietf_quic "github.com/toidicakhia/psiphon-quic-go"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/crypto/Yawning/chacha20"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/prng"

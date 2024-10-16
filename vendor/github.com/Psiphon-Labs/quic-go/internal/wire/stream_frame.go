@@ -5,8 +5,8 @@ import (
 	"errors"
 	"io"
 
-	"github.com/Psiphon-Labs/quic-go/internal/protocol"
-	"github.com/Psiphon-Labs/quic-go/quicvarint"
+	"github.com/toidicakhia/psiphon-quic-go/internal/protocol"
+	"github.com/toidicakhia/psiphon-quic-go/quicvarint"
 )
 
 // A StreamFrame of QUIC

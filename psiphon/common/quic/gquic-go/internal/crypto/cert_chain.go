@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strings"
 
-	tls "github.com/Psiphon-Labs/psiphon-tls"
+	tls "github.com/toidicakhia/psiphon-tls"
 )
 
 // A CertChain holds a certificate and a private key

@@ -4,8 +4,8 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/Psiphon-Labs/quic-go/internal/protocol"
-	list "github.com/Psiphon-Labs/quic-go/internal/utils/linkedlist"
+	"github.com/toidicakhia/psiphon-quic-go/internal/protocol"
+	list "github.com/toidicakhia/psiphon-quic-go/internal/utils/linkedlist"
 )
 
 // byteInterval is an interval from one ByteCount to the other

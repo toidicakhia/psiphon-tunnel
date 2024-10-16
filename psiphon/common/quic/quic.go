@@ -53,9 +53,9 @@ import (
 	"syscall"
 	"time"
 
-	tls "github.com/Psiphon-Labs/psiphon-tls"
-	ietf_quic "github.com/Psiphon-Labs/quic-go"
-	"github.com/Psiphon-Labs/quic-go/http3"
+	tls "github.com/toidicakhia/psiphon-tls"
+	ietf_quic "github.com/toidicakhia/psiphon-quic-go"
+	"github.com/toidicakhia/psiphon-quic-go/http3"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/obfuscator"

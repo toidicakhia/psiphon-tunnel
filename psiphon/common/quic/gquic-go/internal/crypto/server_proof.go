@@ -11,7 +11,7 @@ import (
 	"errors"
 	"math/big"
 
-	tls "github.com/Psiphon-Labs/psiphon-tls"
+	tls "github.com/toidicakhia/psiphon-tls"
 )
 
 type ecdsaSignature struct {

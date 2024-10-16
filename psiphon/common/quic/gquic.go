@@ -27,7 +27,7 @@ import (
 	"net"
 	"time"
 
-	tls "github.com/Psiphon-Labs/psiphon-tls"
+	tls "github.com/toidicakhia/psiphon-tls"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/h2quic"

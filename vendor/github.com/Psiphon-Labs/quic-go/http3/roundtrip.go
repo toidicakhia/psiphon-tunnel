@@ -11,11 +11,11 @@ import (
 	"sync"
 	"sync/atomic"
 
-	tls "github.com/Psiphon-Labs/psiphon-tls"
+	tls "github.com/toidicakhia/psiphon-tls"
 
 	"golang.org/x/net/http/httpguts"
 
-	"github.com/Psiphon-Labs/quic-go"
+	"github.com/toidicakhia/psiphon-quic-go"
 )
 
 type roundTripCloser interface {
