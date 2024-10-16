@@ -27,9 +27,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/miekg/dns"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
+	"github.com/miekg/dns"
 )
 
 // Blocklist provides a fast lookup of IP addresses and domains that are

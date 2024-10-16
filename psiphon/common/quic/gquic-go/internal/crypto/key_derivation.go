@@ -1,8 +1,8 @@
 package crypto
 
 import (
-	"github.com/bifurcation/mint"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/protocol"
+	"github.com/bifurcation/mint"
 )
 
 const (

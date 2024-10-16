@@ -29,10 +29,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/elazarl/goproxy"
-	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/values"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/server"
+	"github.com/elazarl/goproxy"
 )
 
 // TODO: test that server receives and records correct user_agent value
@@ -159,23 +158,10 @@ func attemptConnectionsWithUserAgent(
 
 	// create a server entry
 
-	serverIPv4Address, serverIPv6Address, err := common.GetRoutableInterfaceIPAddresses()
-	if err != nil {
-		t.Fatalf("error getting server IP address: %s", err)
-	}
-	serverIPAddress := ""
-	if serverIPv4Address != nil {
-		serverIPAddress = serverIPv4Address.String()
-	} else {
-		serverIPAddress = serverIPv6Address.String()
-	}
-
 	_, _, _, _, encodedServerEntry, err := server.GenerateConfig(
 		&server.GenerateConfigParams{
-			ServerIPAddress:      serverIPAddress,
-			EnableSSHAPIRequests: true,
-			WebServerPort:        8000,
-			TunnelProtocolPorts:  map[string]int{tunnelProtocol: 4000},
+			ServerIPAddress:     "127.0.0.1",
+			TunnelProtocolPorts: map[string]int{tunnelProtocol: 4000},
 		})
 	if err != nil {
 		t.Fatalf("error generating server config: %s", err)
@@ -192,8 +178,8 @@ func attemptConnectionsWithUserAgent(
     {
         "ClientPlatform" : "Windows",
         "ClientVersion" : "0",
-        "SponsorId" : "0",
-        "PropagationChannelId" : "0",
+        "SponsorId" : "0000000000000000",
+        "PropagationChannelId" : "0000000000000000",
         "ConnectionWorkerPoolSize" : 1,
         "EstablishTunnelPausePeriodSeconds" : 1,
         "DisableRemoteServerListFetcher" : true,

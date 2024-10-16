@@ -23,11 +23,11 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/golang/groupcache/lru"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/parameters"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/tactics"
+	"github.com/golang/groupcache/lru"
 )
 
 const (
@@ -152,7 +152,8 @@ func (c *ServerTacticsParametersCache) Get(
 	if err != nil {
 		return nilAccessor, errors.Trace(err)
 	}
-	_, err = params.Set("", false, tactics.Parameters)
+	_, err = params.Set(
+		"", parameters.ValidationServerSide, tactics.Parameters)
 	if err != nil {
 		return nilAccessor, errors.Trace(err)
 	}

@@ -6,8 +6,8 @@ import (
 	"errors"
 
 	tls "github.com/toidicakhia/psiphon-tls"
-	"github.com/bifurcation/mint"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/protocol"
+	"github.com/bifurcation/mint"
 )
 
 func tlsToMintConfig(tlsConf *tls.Config, pers protocol.Perspective) (*mint.Config, error) {

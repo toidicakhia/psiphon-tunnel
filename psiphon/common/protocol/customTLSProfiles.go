@@ -23,9 +23,9 @@ import (
 	"crypto/sha256"
 	"encoding/json"
 
-	utls "github.com/refraction-networking/utls"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
+	utls "github.com/Psiphon-Labs/utls"
 )
 
 // CustomTLSProfile specifies custom TLS profile. This is used to deploy

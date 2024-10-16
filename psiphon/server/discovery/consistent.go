@@ -24,8 +24,8 @@ import (
 	"sync"
 
 	"github.com/Psiphon-Labs/consistent"
-	"github.com/cespare/xxhash"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/server/psinet"
+	"github.com/cespare/xxhash"
 )
 
 type hasher struct{}

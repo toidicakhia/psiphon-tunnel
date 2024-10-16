@@ -24,10 +24,10 @@ import (
 	"sync"
 	"time"
 
-	lrucache "github.com/cognusion/go-cache-lru"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/parameters"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/prng"
+	lrucache "github.com/cognusion/go-cache-lru"
 )
 
 const (

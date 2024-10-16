@@ -6,9 +6,9 @@ import (
 	"io"
 	"sync"
 
-	"github.com/bifurcation/mint"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/crypto"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/protocol"
+	"github.com/bifurcation/mint"
 )
 
 // KeyDerivationFunction is used for key derivation

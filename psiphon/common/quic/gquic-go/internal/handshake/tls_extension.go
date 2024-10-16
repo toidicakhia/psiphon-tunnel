@@ -6,9 +6,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/bifurcation/mint"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/protocol"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/utils"
+	"github.com/bifurcation/mint"
 )
 
 type transportParameterID uint16

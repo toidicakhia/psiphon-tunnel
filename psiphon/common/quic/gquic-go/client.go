@@ -9,12 +9,12 @@ import (
 	"sync"
 
 	tls "github.com/toidicakhia/psiphon-tls"
-	"github.com/bifurcation/mint"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/handshake"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/protocol"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/utils"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/wire"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/qerr"
+	"github.com/bifurcation/mint"
 )
 
 type client struct {

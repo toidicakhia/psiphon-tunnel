@@ -67,11 +67,11 @@ import (
 	"net"
 	"strings"
 
-	"github.com/google/gopacket"
-	"github.com/google/gopacket/layers"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/prng"
+	"github.com/google/gopacket"
+	"github.com/google/gopacket/layers"
 )
 
 // Config specifies a packet manipulation configuration.
@@ -173,7 +173,7 @@ type compiledSpec struct {
 func compileSpec(spec *Spec) (*compiledSpec, error) {
 
 	compiledPacketSpecs := make([][]transformation, len(spec.PacketSpecs))
-	for i, _ := range spec.PacketSpecs {
+	for i := range spec.PacketSpecs {
 		compiledPacketSpecs[i] = make([]transformation, len(spec.PacketSpecs[i]))
 		for j, transformationSpec := range spec.PacketSpecs[i] {
 			transform, err := compileTransformation(transformationSpec)

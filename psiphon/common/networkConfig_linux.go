@@ -20,8 +20,8 @@
 package common
 
 import (
-	"github.com/syndtr/gocapability/capability"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
+	"github.com/syndtr/gocapability/capability"
 )
 
 func configureNetworkConfigSubprocessCapabilities() error {

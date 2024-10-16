@@ -31,11 +31,11 @@ import (
 	"time"
 
 	"github.com/Psiphon-Inc/rotate-safe-writer"
-	"github.com/sirupsen/logrus"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/buildinfo"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/stacktrace"
+	"github.com/sirupsen/logrus"
 )
 
 // TraceLogger adds single frame stack trace information to the underlying
@@ -161,6 +161,10 @@ func (logger *commonLogger) WithTraceFields(fields common.LogFields) common.LogT
 func (logger *commonLogger) LogMetric(metric string, fields common.LogFields) {
 	fields["event_name"] = metric
 	logger.traceLogger.LogRawFieldsWithTimestamp(LogFields(fields))
+}
+
+func (logger *commonLogger) IsLogLevelDebug() bool {
+	return logger.traceLogger.Level == logrus.DebugLevel
 }
 
 // CommonLogger wraps a TraceLogger instance with an interface that conforms
@@ -332,7 +336,7 @@ func InitLogging(config *Config) (retErr error) {
 }
 
 func IsLogLevelDebug() bool {
-	return log.Logger.Level == logrus.DebugLevel
+	return log.Level == logrus.DebugLevel
 }
 
 func init() {

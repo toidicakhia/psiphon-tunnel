@@ -37,10 +37,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/grafov/m3u8"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/parameters"
+	"github.com/grafov/m3u8"
 )
 
 // HttpProxy is a HTTP server that relays HTTP requests through the Psiphon tunnel.
@@ -85,7 +85,7 @@ type HttpProxy struct {
 	urlProxyDirectRelay    *http.Transport
 	urlProxyDirectClient   *http.Client
 	responseHeaderTimeout  time.Duration
-	openConns              *common.Conns
+	openConns              *common.Conns[net.Conn]
 	stopListeningBroadcast chan struct{}
 	listenIP               string
 	listenPort             int
@@ -172,7 +172,7 @@ func NewHttpProxy(
 		urlProxyDirectRelay:    urlProxyDirectRelay,
 		urlProxyDirectClient:   urlProxyDirectClient,
 		responseHeaderTimeout:  responseHeaderTimeout,
-		openConns:              common.NewConns(),
+		openConns:              common.NewConns[net.Conn](),
 		stopListeningBroadcast: make(chan struct{}),
 		listenIP:               proxyIP,
 		listenPort:             proxyPort,

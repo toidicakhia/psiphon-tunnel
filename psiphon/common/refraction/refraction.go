@@ -38,6 +38,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"
+	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
+	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/protocol"
 	"github.com/armon/go-proxyproto"
 	lrucache "github.com/cognusion/go-cache-lru"
 	"github.com/pion/sctp"
@@ -48,9 +51,6 @@ import (
 	refraction_networking_prefix "github.com/refraction-networking/conjure/pkg/transports/wrapping/prefix"
 	refraction_networking_proto "github.com/refraction-networking/conjure/proto"
 	refraction_networking_client "github.com/refraction-networking/gotapdance/tapdance"
-	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"
-	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
-	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/protocol"
 )
 
 const (
@@ -866,7 +866,7 @@ type dialManager struct {
 	runCtx         context.Context
 	stopRunning    context.CancelFunc
 
-	conns *common.Conns
+	conns *common.Conns[net.Conn]
 }
 
 func newDialManager() *dialManager {
@@ -874,7 +874,7 @@ func newDialManager() *dialManager {
 	return &dialManager{
 		runCtx:      runCtx,
 		stopRunning: stopRunning,
-		conns:       common.NewConns(),
+		conns:       common.NewConns[net.Conn](),
 	}
 }
 

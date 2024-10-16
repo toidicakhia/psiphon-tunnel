@@ -26,9 +26,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/sirupsen/logrus"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
+	"github.com/sirupsen/logrus"
 )
 
 // protocolDemux enables a single listener to support multiple protocols

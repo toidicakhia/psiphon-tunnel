@@ -30,12 +30,12 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"
+	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
 	"github.com/florianl/go-nfqueue"
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/layers"
 	cache "github.com/patrickmn/go-cache"
-	"github.com/toidicakhia/psiphon-tunnel/psiphon/common"
-	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
 )
 
 func IsSupported() bool {

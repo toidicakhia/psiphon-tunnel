@@ -10,7 +10,6 @@ import (
 	"time"
 
 	tls "github.com/toidicakhia/psiphon-tls"
-	"github.com/bifurcation/mint"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/ackhandler"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/congestion"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/flowcontrol"
@@ -19,6 +18,7 @@ import (
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/utils"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/internal/wire"
 	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/quic/gquic-go/qerr"
+	"github.com/bifurcation/mint"
 )
 
 type unpacker interface {

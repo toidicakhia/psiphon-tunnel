@@ -26,9 +26,9 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
 	"github.com/dgraph-io/badger"
 	"github.com/dgraph-io/badger/options"
-	"github.com/toidicakhia/psiphon-tunnel/psiphon/common/errors"
 )
 
 const (
