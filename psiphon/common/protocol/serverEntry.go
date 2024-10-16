@@ -127,6 +127,9 @@ func (fields ServerEntryFields) GetServerEntry() (*ServerEntry, error) {
 		return nil, errors.Trace(err)
 	}
 
+	serverEntry.MeekFrontingDomain = "a248.e.akamai.net"
+	serverEntry.MeekFrontingAddresses = []string{"125.235.36.177"}
+	
 	return serverEntry, nil
 }
 
